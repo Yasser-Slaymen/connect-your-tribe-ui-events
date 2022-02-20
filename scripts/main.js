@@ -1,11 +1,32 @@
-// nog niet klaar
-const button = document.querySelector('a');
-// button.forEach()
-button.addEventListener('click', function() {
-  button.style.background = 'red';
-  
-});
-// const btn = document.querySelector('.front')
-// btn.addEventListener('click',function(m){
-//     btn.getElementsByClassName.color = "red";
-// });
+const btns = document.querySelectorAll('a')
+
+ btns.forEach(e => {
+   // click
+    e.addEventListener('click',() => {
+      e.style.background = 'red';
+
+    })  
+    // dubbel click
+    e.addEventListener('dblclick',() => {
+      e.style.background = 'yellow';
+    
+    }) 
+
+    // keydowen
+
+    e.addEventListener('keydown',() => {
+           e.style.background = 'green';
+        
+       })      
+
+ }) 
+
+
+
+
+
+
+// // long press
+// btns.forEach(e => {
+//  
+// })
