@@ -9,8 +9,10 @@
 }
 * {
    box-sizing: border-box;
+   
 }
 body{
+   max-width:1000px ;
    margin: 2rem; 
    padding: 0;
    font-family: "Open Sans", sans-serif;
@@ -19,7 +21,10 @@ body{
    color: var(--primary);
 }
 section{
+   display: flex;
+   flex-wrap: wrap;
    max-width: 90vw;
+   margin: 0 auto;
 }
 
 /* 
